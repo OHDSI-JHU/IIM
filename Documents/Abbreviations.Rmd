@@ -1,0 +1,18 @@
+```{r abbreviations, echo=FALSE, message=FALSE}
+abbreviations <- readr::read_delim(col_names = FALSE, delim = ";", trim_ws = TRUE, file = "
+DM;     Dermatomyositis
+EHDEN;  European Health Data and Evidence Network
+OMOP;   Observational Medical Outcomes Partnership
+OHDSI;  Observational Health Data Science and Informatics
+SNOMED; Systematized Nomenclature of Medicine
+")
+
+tab <- kable(abbreviations, col.names = NULL, linesep = "", booktabs = TRUE)
+
+if (knitr::is_latex_output()) {
+  tab %>% kable_styling(latex_options = c("striped", "hold_position"),
+                        font_size = latex_table_font_size)
+} else {
+  tab %>% kable_styling(bootstrap_options = "striped")
+}
+```

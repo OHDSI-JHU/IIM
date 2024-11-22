@@ -1,45 +1,25 @@
-StrategusStudyRepoTemplate
+Determining incidence rates and modifiable risk factors for infectious outcomes and medication adverse events in adult dermatomyositis patients through the OHDSI Community.
+=============
+
+<img src="https://img.shields.io/badge/Study%20Status-Repo%20Created-lightgray.svg" alt="Study Status: Repo Created">
+
+- Analytics use case(s): **Characterization, Patient-level Prediction**
+- Study type: **Clinical Application [TODO: Do we agree?]**
+- Tags: **Idiopathic inflammatory mypoathies, Myositis**
+- Study lead: **Chrisopher Mecoli**
+- Study lead forums tag: **[Christopher Mecoli](https://forums.ohdsi.org/u/christopher_mecoli/summary)**
+- Study start date: **September 2024 [TODO: Accuracy]**
+- Study end date: **TBD**
+- Protocol: **TBD**
+- Publications: **-**
+- Results explorer: **-**
+
+Idiopathic inflammatory myopathies (IIM) represent a group of conditions (dermatomyositis, immune-mediated necrotizing myopathy, anti-synthetase syndrome) with remarkable heterogeneity that are associated with a myriad of disease manifestations and complications. Due to both the underlying immune dysregulation characteristic of these diseases, in addition to medications often used to treat them, patients with IIM can unfortunately develop a large number of complications. Several of these complications are associated with markedly high morbidity and mortality rates (>50%); however, our ability to predict these outcomes and risk-stratify patients accordingly is poor. These complications generally fall into two categories: infection and medication adverse events. **Understanding the incidence of these complications, in addition to determining associated risk factors, is paramount to improved clinical decision-making and understanding underlying mechanism.**
+
+
 =================
 
 **PLEASE NOTE THIS IS UNDER DEVELOPMENT AND SHOULD NOT BE USED YET**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

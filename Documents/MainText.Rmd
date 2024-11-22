@@ -1,0 +1,193 @@
+# Rationale and Background
+
+Idiopathic inflammatory myopathies (IIM) represent a group of conditions (dermatomyositis, immune-mediated necrotizing myopathy, anti-synthetase syndrome) with remarkable heterogeneity that are associated with a myriad of disease manifestations and complications. Due to both the underlying immune dysregulation characteristic of these diseases, in addition to medications often used to treat them, patients with IIM can unfortunately develop a large number of complications. Several of these complications are associated with markedly high morbidity and mortality rates (>50%); however, our ability to predict these outcomes and risk-stratify patients accordingly is poor. These complications generally fall into two categories: infection and medication adverse events. **Understanding the incidence of these complications, in addition to determining associated risk factors, is paramount to improved clinical decision-making and understanding underlying mechanism. **
+
+Infectious complications in rheumatic diseases carry a high morbidity and mortality and impact clinical decision-making (PMIDs 32020305, 28134084). While individually they are rare, in aggregate they represent a large number of clinically-relevant but largely unstudied complications. Balancing the risks of infection from immunosuppression with the consequences of increased IIM disease activity continues to challenge physicians. Through better understanding the incidence and risk factors of these infectious complications, clinicians will be better informed to optimize treatment regimens. The following are examples of rare and severe infectious complications: 
+  
+## Burden of infectious complications in patients with IIM 
+
+### Progressive multifocal leukoencephalopathy (PML)
+
+Few robust epidemiologic studies have examined PML, and none have focused specifically on IIM patients. Both mycophenolate and rituximab are often used to treat IIM, and both medications have been issued black box warnings from the FDA for the development of PML. Importantly, a case has been reported of a patient with untreated DM developing PML, suggesting immunosuppression may not always be required for PML to occur [22]. Historically, most data on PML has focused on HIV and oncology patient populations, the latter often extrapolated to rheumatic diseases. In oncology patients, the estimated incidence was reported to range from 2-10/100,000 patient years [20938025]. PML in oncology patients carries a median survival of 100 days, and for those that survive long term there is often residual cognitive deficits [31554669]. As most of our data on PML originates from single center studies, the ability to examine specific medication regimens and disease phenotypes has not been possible to date. 
+
+### Pneumocystis jirovecii pneumonia (PJP)
+
+PJP is an opportunistic infection with high mortality among patients with underlying rheumatologic conditions, including IIM. The incidence of PJP in PM/DM is uncommon, having been estimated at 3.6/100,000 patient-years [7]. Still, it remains a grave concern in patients with rheumatic diseases due to its high mortality rate, ranging from 33 to 60% depending on the cohort examined [8, 9]. Despite these mortality rates, up to 30% of rheumatologists and other healthcare providers do not routinely administer prophylaxis [10, 11]. (20194450). While corticosteroids are now a well-established risk factor for the development of PJP, other risk factors (or protective factors) are not well established.  
+
+### Varicella Zoster
+
+One out of every three Americans will develop shingles during their lifetime, and of that group, 1 in 10 patients will develop post-herpetic neuralgia (PHN) that can last months or years [23]. Patients with IIM, even those not on therapy, are at higher risk for developing VZV compared with the general population [24]. With an increasing use of higher dose and combination immunosuppressant therapy, VZV continues to be challenge to physicians treating patients with IIM and SSc [6, 24]. The incidence rate for VZV per 1000 person-years was higher in IIM patients even if they were not on immunosuppressive therapy (28.7/1000 person-years) compared with matched controls (5.75/1000 person-years). In IIM patients on corticosteroids and immunosuppression, the incidence rate increased to 40.3/1000 person-years [24].
+
+## Burden of medication adverse events in patients with IIM 
+
+Two common medications used to treat IIM are mycophenolate and intravenous immunoglobulin. While effective, these medications are not without harm – adverse events including aseptic meningitis (IVIG), thrombotic events (IVIG) and malignancy (MMF) have all been consistently cited in patients receiving these medications [Omair 25933090]. 
+
+### Aseptic meningitis
+
+Aseptic meningitis is believed to occur in patients receiving IVIG with incidence ranging from <1% to upwards of 11%. Morbidity is high, often requiring hospitalization and ruling out other causes of severe headache (8037406). 
+
+### VTE/PE
+
+A heighted risk of VTE/PE has been reported in IIM patients, independent of treatment. However, in patients who receive IVIG, an even higher risk of thrombotic events is possible. Thrombotic events can be both arterial (myocardial infarction and stroke) as well as venous (deep venous thromboembolism or pulmonary embolism), and have been associated with mortality rates up to 20% [PMID: 15970713]. Prior literature has reported thrombotic event rates ranging from 6.1-20.5 per 1000 persons exposed (all patients, not just those with IIM). From the minimal literature on this issue, risk factors for thrombotic events are thought to include older age (≥ 45 years), prior TE(s), and hypercoagulable state(s). [PMID: 22448967 PMID: 15970713].
+
+### Malignancy
+
+Patients with IIM are at risk for cancer via two distinct mechanisms: First, IIM has an increased risk of contemporaneous cancer (within 3 years of rheumatic disease onset) with mechanistic data strongly suggesting a model of cancer-induced autoimmunity [3]. Second, IIM patients with long-term disease are at risk for developing malignancy (particularly lymphoproliferative disorders, lymphomas, and skin cancers) due to both dysregulation of the immune system and long-term use of immunosuppressive medications such as high-dose mycophenolate.
+
+Conducting multicenter research using data sources mapped to the Observational Medical Outcomes Partnership (OMOP) common data model (CDM) provides a unique opportunity to compare populations and healthcare systems, allowing for robust analyses to be performed in a timely manner across a network of sites.[37] 
+
+# Study Objectives
+
+The primary objective of this study is to determine incidence rates and modifiable risk factors of infectious outcomes and medication adverse events in IIM patients. 
+
+The secondary objective is to describe the incidence of dermatomyositis itself across several databases.
+
+# Research Methods
+
+## Data Sources
+
+This study is a multinational cohort study describing the baseline characteristics, treatments and outcomes in dermatomyositis. 
+
+We intend to solicit participation from a variety of healthcare settings in multiple geographies (Table 1). Should more data partners wish to participate, this analysis could extend to any additional databases that are formatted to the Observational Medical Outcomes Partnership-Common Data Model (OMOP-CDM). We welcome those with data mapped to the OMOP-CDM to join us in executing this study if they are willing to participate.
+
+The study will be conducted using data from real world data sources that have been mapped to the OMOP-CDM in collaboration with the Observational Health Data Sciences and Informatics (OHDSI) and European Health Data and Evidence Network (EHDEN) initiatives. The [OMOP-CDM](https://github.com/OHDSI/CommonDataModel/wiki) includes a standard representation of health care experiences (such as information related to drug utilization and condition occurrence), as well as common vocabularies for coding clinical concepts, and enables consistent application of analyses across multiple disparate data sources.[38]
+
+```{r data_sources, echo=FALSE}
+data_sources <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, show_col_types = FALSE, file = "
+Data Source; Source Population; Sample Size; Data Type; Longitudinal History
+
+Columbia University Irving Medical Center; Patients of the Columbia University Irving Medical Center (New York City, USA); ≈ 6 million; General practice electronic health records, outpatient specialist electronic health records, inpatient hospital electronic health records, hospital billing/summary; 1989 (1978 for diagnoses)
+Stanford Medicine Research Data Repository (STARR); Patients of Stanford University (San Francisco Bay Area, USA); ≈ 3 million; General practice electronic health records, outpatient specialist electronic health records, inpatient hospital electronic health records, hospital billing/summary; 2008
+Johns Hopkins; EHR records; ≈ 2.4 million; General practice electronic health records, outpatient specialist electronic health records, inpatient hospital electronic health records, hospital billing/summary; 2016
+")
+
+tab <- kable(data_sources, booktabs = TRUE, linesep = "") |>
+  column_spec(1, width = "15em") |>
+  column_spec(2, width = "20em") |>
+  column_spec(3, width = "8em") |>
+  column_spec(4, width = "30em") |>
+  column_spec(5, width = "10em") |>
+  footnote(general = "Data sources mapped to the OMOP CDM.", general_title = "")
+
+if (knitr::is_latex_output()) {
+  tab |> kable_styling(latex_options = c("striped", "hold_position"),
+                        font_size = latex_table_font_size)
+} else {
+  tab |> kable_styling(bootstrap_options = "striped")
+}
+```
+
+## Study design and questions to be answered
+
+The study will be a retrospective observational cohort study based on routinely-collected health care data which has been mapped to the OMOP-CDM. We will utilize the Characterization and Patient Level Prediction packages of HADES to execute this study to answer the following questions:
+
+* Determine the incidence rate of dermatomyositis [as defined by several different phenotype algorithms of varying sensitivity/specificity] across the OHDSI network.
+* Among patients who are newly diagnosed with dermatomyositis (incident DM phenotypes), which patients will go on to have [PML/PJP/Varicella/cancer] within 1, 3, 5, and 10 years of index date (incident DM)?
+* Among incident DM patients who are new users of [mycophenolate], which patients will experience [PML/PJP/Varicella/cancer] within 1, 3, 5, and 10 years following exposure start? 
+* Among incident DM patients who are new users of [IVIG], which patients will experience [aseptic meningitis/VTE/MACE] within 1, 3, 5, and 10 years following exposure start? 
+
+## Study Population
+
+We have previously created and validated several phenotypes under the study "Creation and Validation of Dermatomyositis Algorithms through the Observational Health Data Sciences and Informatics (OHDSI) Community". These phenotypes will be used for the current study. 
+
+## Exposure Comparators
+
+Exposures in this study will be the condition itself (dermatomyositis). For additional analyses, other exposures will include specific medications (mycophenolate, IVIG). 
+
+## Outcomes {#outcomes}
+
+These outcomes will be described within 1, 3, 5, and 10 years post-index date (as follow-up duration allows).
+
+* Death
+* VTE
+  * Deep vein thrombosis events
+  * Venous thromboembolic (pulmonary embolism and deep vein thrombosis) events 
+  * Pulmonary Embolism events
+* Malignancy (aggregate field)
+* MACE
+* PML
+* PJP
+* Shingles (VZV)
+* Aseptic meningitis
+
+
+## Covariates
+
+Covariates are selected based on prior literature suggesting their biological relevance in the outcomes of interest. 
+
+### Demographic
+
+* Age at index date
+* Sex
+* Race
+* Ethnicity
+
+### Disease Features (at baseline and over longitudinal follow-up)
+
+* maximum CPK 
+* nadir WBC
+* nadir absolute lymphocyte count (ALC)
+* immunosuppressive medications 
+  * corticosteroids (ideally dose/duration but that seems quite unlikely)
+  * methotrexate
+  * azathioprine
+  * tacrolimus
+  * cyclosporine
+  * tofacitinib
+  * rituximab
+  * intravenous immunoglobulin
+  * subcutaneous immunoglobulin
+  * mycophenolate
+  * hydroxychloroquine
+  * cyclophosphamide
+  * Acthar
+* interstitial lung disease
+
+### Other covariates of interest that may confound/effect modify outcomes of interest: 
+
+*	Use of PJP prophylaxis (Bactrim, dapsone, atovaquone)
+*	Prior VZV vaccination (Shingrix, Zostavax)
+*	History of cancer 
+*	Prior MACE 
+*	HIV
+
+
+## Analysis
+
+### Cohort Characterization
+
+All analyses will be performed using code developed for HADES (Health Analytics Data-to-Evidence Suite), formerly known as the OHDSI Methods library.[39] The code for this study can be found at [TODO: Repository link]. A diagnostic package, built off the [OHDSI Cohort Diagnostics library](https://ohdsi.github.io/CohortDiagnostics/), is included in the base package as a preliminary step to assess the fitness of use of phenotypes on your database. If a database passes cohort diagnostics, the full study package will be executed. Baseline covariates will be extracted using an optimized SQL extraction script based on principles of the [FeatureExtraction package](http://ohdsi.github.io/FeatureExtraction/) to quantify Demographics (Gender, Prior Observation Time, Age Group), Condition Group Eras and Drug Group Eras. Additional cohort-specific covariates will be constructed using OMOP standard vocabulary concepts.
+
+At the time of executing Feature Extraction, the package will create a data frame in which individuals’ age and sex will be extracted. Individuals’ medical conditions, procedures, measurements and medications will be summarized 1) over the year prior to their index date (-365d to -1d), 2) over the 30 days before index date (-30d to -1d), 3) at index date (0d), and 4) at intervals 1, 3, 5, and 10 years post index date. Number and proportion of persons with feature variables during time-at-risk windows will be reported by target cohort and specific stratifications. Standardized mean differences (SMD) will be calculated when comparing characteristics of study cohorts, with plots comparing the mean values of characteristics for each of the characteristics. 
+
+7.8 Logistics of Executing a Federated Analysis
+Sites will run the study analysis package locally on their data coded according to OMOP-CDM. Only aggregate results will be shared with the study coordinator. Result files will be automatically staged into a ZIP file that can be transmitted using the [OhdsiSharing R Library](http://ohdsi.github.io/OhdsiSharing) or through a site’s preferred SFTP client using a site-specific key provisioned by the OHDSI Study Coordinator. Local data stewards are encouraged to review study parameters to ensure minCellCount function follows local governance. At a minimum, it is encouraged to keep this value to >5 to avoid any potential issues with re-identification of patients. An example of tables and figures can be seen in Section 13. (Note: covariates are constructed using controlled ontologies from the OMOP standard vocabularies though some labels may be replaced with publication-friendly labels due to space restrictions of the submitting journal.)
+
+
+# Sample Size and Study Power {#sample-size}
+
+The study package will be designed to suppress any analyses which have less than 5 unique persons. This parameter is configurable and can be adjusted by the analyst executing the package, should their institution require a different threshold. This means that each data owner will only generate results for target-stratum-feature pairs that meet this minimum threshold. 
+
+# Strengths and Limitations {#strengths-limitations}
+
+## Strengths
+
+Leveraging the OHDSI network/the OMOP CDM offers a promising solution for studying rare diseases like dermatomyositis (DM) by utilizing real-world data from diverse sources. This approach can improve the generalizability and reproducibility of research findings, ultimately contributing to a better understanding of DM and the development of more effective treatment strategies.
+
+## Limitations
+
+While leveraging multiple databases in network studies is appealing from a sample size perspective, concerns remain regarding the accuracy of these phenotypes. For example, in EHR OMOP CDMs, the index date may not reflect the actual DM onset date, as the interval from DM diagnosis to referral to a tertiary referral center can sometimes take months to years. Further, additional limitations of this study stem from suboptimal ETL practices from source data to the OMOP CDM. This study will highlight the heterogeneity of the ETL process for uncommon concepts (such as dermatomyositis-specific autoantibody measurement), which may inform future research agendas. 
+
+Medical conditions for comorbidity or representing serious adverse events may be underestimated as they will be based on the presence of condition codes, with the absence of such a record taken to indicate the absence of a disease. Meanwhile, medication records indicate that an individual was prescribed or dispensed a particular drug, but this does not necessarily mean that an individual took the drug as originally prescribed or dispensed. Our study could be subject to exposure misclassification with false positives if a patient had a dispensing but did not ingest the drug, but may also be subject to false negatives for non-adherent patients who continued their medication beyond the days supply due to stockpiling.  Medication use estimates on the date of hospitalization is particularly sensitive to misclassification, and may conflate baseline concomitant drug history with immediate treatment upon admission. Observed differences may be explained by changes in clinical practice or data capture procedures over time, rather than by differences in the individuals themselves. This is likely a particular relevant drawback for any comparison of medication use. 
+
+# Protection of Human Subjects
+
+The study uses only de-identified data. Confidentiality of patient records will be maintained at all times. Data custodians will remain in full control of executing the analysis and packaging results. There will be no transmission of patient-level data at any time during these analyses. Only aggregate statistics will be captured. Study packages will contain minimum cell count parameters to obscure any cells which fall below allowable reportable limits. All study reports will contain aggregate data only and will not identify individual patients or physicians. 
+
+# Management and Reporting of Adverse Events and Adverse Reactions
+
+This study will provide a descriptive summary of individuals at time of surgery for wrist arthritis. The main focus is upon adverse events within the first 90 days following surgery, and those events over five years following surgery are outside the scope of the study.
+
+# Plans for Disseminating and Communicating Study Results
+
+All results will be posted on a freely available and accessible website such as the OHDSI website (evidence.ohdsi.org) after completion of the study. Results are aimed for publication in a clinically focused peered reviewed scientific journal to inform future shared patient and clinician decision making regarding the role of surgery in wrist arthritis. The results will also be presented at the OHDSI and BSSH in-person events.

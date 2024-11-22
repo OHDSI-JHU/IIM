@@ -1,0 +1,17 @@
+**Background and Significance**: 
+
+In this study we will determine incidence rates and modifiable risk factors of infectious outcomes and medication adverse events in dermatomyositis patients through the OHDSI Community.
+
+**Study Aims**: 
+
+**Study Description**: 
+
+* **Population**: 
+
+* **Comparators**:
+  
+* **Outcomes**:
+  
+* **Design**: 
+
+* **Timeframe**: 

@@ -1,0 +1,33 @@
+```{r parties, echo=FALSE, message=FALSE, warning=FALSE}
+parties <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
+Investigator; Institution/Affiliation
+  
+Christopher A Mecoli, MD; Johns Hopkins University School of Medicine, Baltimore, MD, USA
+Will Kelly, BS; Johns Hopkins University School of Medicine, Baltimore, MD, USA
+Benjamin Martin, PhD; Johns Hopkins University School of Medicine, Baltimore, MD, USA
+Erik Westlund, PhD;	Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, USA
+Christelle Xiong, MS;	Johns Hopkins University School of Medicine, Baltimore, MD, USA
+Gowtham Rao, MD; Jansen (Johnson & Johnson)
+Joel Swerdel, PhD;	Jansen (Johnson & Johnson)
+Elizabeth Park, MD;	Columbia University
+Thomas Falconer, MS;	Columbia University 
+Hannah Morgan-Cooper, MS;	Stanford University
+David Fiorentino, MD PhD;	Stanford University
+Lorinda Chung, MD;	Stanford University
+Robert Dellavalle;	University of Minnesota
+Steve Johnson;	University of Minnesota
+")
+
+
+tab <- kable(parties, booktabs = TRUE, linesep = "") %>%
+  column_spec(1, width = "10em") %>%
+  column_spec(2, width = "35em") %>%
+  footnote(general = "* Principal Investigator", general_title = "")
+
+if (knitr::is_latex_output()) {
+  tab %>% kable_styling(latex_options = c("striped", "hold_position"),
+                        font_size = latex_table_font_size)
+} else {
+  tab %>% kable_styling(bootstrap_options = "striped")
+}
+```
